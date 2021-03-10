@@ -1,0 +1,115 @@
+@media screen and (min-width: 600px) {
+
+	#zinecontent {
+		max-width: 900px;
+	}
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+	#zinecontent {
+		max-width: 95%;
+	}
+
+}
+
+#zinecontent {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	border: 2px dashed #218321;
+}
+
+#zinecontent > * {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#zinecontent > p {
+	font-family: 'Times';
+	font-size: 20px;
+}
+
+
+.articletitle {
+	font-family: 'Times';
+	font-size: 50px;
+	text-align: center;
+	margin-top: 40px;
+}
+
+#titleicon {
+	width: 45px;
+	position: relative;
+	bottom: -6px;
+	margin-right: 10px;
+}
+
+.lyricswithtranslation  {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	clear: both;
+
+}
+
+.lyricswithtranslation pre {
+	width: 50%;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	white-space: pre-wrap;
+
+}
+
+.tamillyrics {
+	font-family: 'monospace';
+	font-size: 16px;
+}
+
+.englishlyrics {
+	font-family: 'Times';
+	font-size: 16px;
+}
+
+
+#chandrababu_portrait {
+	float: right;
+	margin-top: 20px;
+}
+
+.videowrapper{
+	margin-top: 35px;
+	margin-bottom: 10px;
+	position: relative;
+    padding-bottom: 56.25%; /* 16:9  */
+    padding-top: 25px;
+    height: 0;
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.videowrapper iframe {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+}
+
+.videowrapper .videotitle {
+	position: absolute;
+	bottom: 10px;
+}
+
+
+
+
+
+
