@@ -1,5 +1,8 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+#images,videos and fonts
+/src/assets
+
 # compiled output
 /dist
 /tmp
