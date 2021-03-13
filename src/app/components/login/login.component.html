@@ -1,0 +1,14 @@
+    <mat-card-content>
+    <!-- This is where you need to add your login form -->
+    <form>
+    	<mat-form-field>
+		<input  matInput  placeholder="Email" [(ngModel)]="email"  type="email" name="email"  required>
+		</mat-form-field>
+		<mat-form-field>
+		<input  matInput  placeholder="Password" [(ngModel)]="password"  type="password"  name="password"  required>
+		</mat-form-field>
+    </form>
+    </mat-card-content>
+     <mat-card-actions>
+            <button  mat-raised-button (click)="login()"  color="primary">உள்நுழைவு</button>
+    </mat-card-actions>

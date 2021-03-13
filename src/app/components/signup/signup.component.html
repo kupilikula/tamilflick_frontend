@@ -1,0 +1,22 @@
+    <mat-card-content>
+    <!-- This is where you need to add your login form -->
+    <form #f = "ngForm">
+    	<mat-form-field>
+		<input  matInput  placeholder="Email" [(ngModel)]="user.email"  type="email" name="emailname"  required>
+		</mat-form-field>
+		<mat-form-field>
+		<input  matInput  placeholder="Password" [(ngModel)]="user.password"  type="password"  name="passwordname" #passwd="ngModel" required minlength="5">
+		<small [hidden]="passwd.valid ||  (passwd.pristine && !f.submitted)">
+        Invalid password </small>		
+		</mat-form-field>
+		<mat-form-field>
+		<input  matInput  placeholder="Retype Password" [(ngModel)]="retypepassword" type="password"  name="retypepasswordname" required minlength="5" ngValidateEqual="passwordname" #retypepasswd="ngModel">
+		<small [hidden]="retypepasswd.valid ||  (retypepasswd.pristine && !f.submitted)">
+        Password mismatch </small>
+		</mat-form-field>
+
+    </form>
+    </mat-card-content>
+     <mat-card-actions>
+            <button  mat-raised-button (click)="signup()"  color="primary">பதிவு</button>
+    </mat-card-actions>
